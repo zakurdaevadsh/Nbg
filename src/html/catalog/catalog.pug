@@ -1,0 +1,9 @@
+- var sortingTypes = ['По возрастанию', 'По убыванию', 'По цене', 'По хуйне']
+
+.catalog__page
+    +breadcrumps('catalog__breadcrumps', 'Каталог', 'Аналог', 'Сосалог')
+    h1.catalog__title Каталог
+    .catalog__sort Сортировать по
+        +dropdown(sortingTypes)
+    .catalog__pagination#pagination
+    .catalog__content
